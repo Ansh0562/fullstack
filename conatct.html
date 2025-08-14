@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <h3></h3>
+</head>
+<body>
+    <form action="submit.html" method="post">
+    <!-- Text input -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <!-- email -->
+    <label for="name">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br> 
+    <!-- DOB     -->
+    <label for = "dob">DOB:</label><br>
+    <input type="date" id = "dob" name="dob" required><br><br>
+    <!-- gender -->
+     <label for ="gender">gender</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- country -->
+    <select id="country-select" name="country">
+    <option value="">Select a country</option>
+    <option value="US">United States</option>
+    <option value="CA">Canada</option>
+    <option value="GB">United Kingdom</option>
+    <option value="AU">Australia</option>
+    <option value="IN">INDIA</option>
+</select><br><br>
+
+    <!-- skills -->
+     <label for="skills">skills:</label><br>
+    <input type="text" id="skills" name="skills" required><br><br>
+    </form>
+
+    <!-- upload resume -->
+    <form action="/upload_resume" method="post" enctype="multipart/form-data">
+        <label for="file-upload">Choose a file:</label>
+        <input type="file" id="file-upload" name="uploadfile
+        "
+    <!-- </form>  -->
+</body>
+</html>
