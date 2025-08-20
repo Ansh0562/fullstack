@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <h3></h3>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-    <form action="submit.html" method="post">
+  <div class="navbar-container">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#account">Account</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <h1>Fill this</h1>
+  <p id="article">Carefully fill this form</p>
+
+  <form action="submit.html" method="post">
     <!-- Text input -->
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name" required><br><br>
+
     <!-- email -->
-    <label for="name">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br> 
-    <!-- DOB     -->
-    <label for = "dob">DOB:</label><br>
-    <input type="date" id = "dob" name="dob" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- DOB -->
+    <label for="dob">DOB:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
     <!-- gender -->
-     <label for ="gender">gender</label><br>
+    <label for="gender">Gender:</label><br>
     <input type="radio" id="male" name="gender" value="male">
     <label for="male">Male</label>
 
@@ -26,25 +44,25 @@
     <label for="female">Female</label><br><br>
 
     <!-- country -->
+    <label for="country-select">Country:</label><br>
     <select id="country-select" name="country">
-    <option value="">Select a country</option>
-    <option value="US">United States</option>
-    <option value="CA">Canada</option>
-    <option value="GB">United Kingdom</option>
-    <option value="AU">Australia</option>
-    <option value="IN">INDIA</option>
-</select><br><br>
+      <option value="">Select a country</option>
+      <option value="US">United States</option>
+      <option value="CA">Canada</option>
+      <option value="GB">United Kingdom</option>
+      <option value="AU">Australia</option>
+      <option value="IN">India</option>
+    </select><br><br>
 
     <!-- skills -->
-     <label for="skills">skills:</label><br>
+    <label for="skills">Skills:</label><br>
     <input type="text" id="skills" name="skills" required><br><br>
-    </form>
 
     <!-- upload resume -->
-    <form action="/upload_resume" method="post" enctype="multipart/form-data">
-        <label for="file-upload">Choose a file:</label>
-        <input type="file" id="file-upload" name="uploadfile
-        "
-    <!-- </form>  -->
+    <label for="file-upload">Upload Resume:</label><br>
+    <input type="file" id="file-upload" name="uploadfile"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>
