@@ -14,7 +14,7 @@ body {
 /* navbar */
 .navbar-container {
   width: 100%;
-  background: #333;
+  background:rgb(100,35,34);
 }
 
 .navbar-container nav ul {
@@ -56,4 +56,13 @@ form {
   width: 300px; /* fixed width */
   text-align: left;
   font-size: medium;
+}
+.card {
+  border: 2px solid black;   /* thickness, style, and color */
+  border-radius: 10px;       /* rounded corners */
+  padding: 30px;             /* space inside card */
+  width: 250px;
+  background-color:aliceblue;
+
+
 }
