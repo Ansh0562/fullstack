@@ -1,0 +1,44 @@
+h1,h3{
+    text-align: center;
+    color: brown;
+    text-transform: uppercase;
+}
+ #post article p{
+    color:antiquewhite;
+    line-height: 1.6;
+    font-size: 16px;
+
+ }
+ p {
+    color: rgb(25, 24, 24);
+    line-height: 1.6;
+    font-size: 16px;
+    font-style: italic;
+}
+
+ 
+ body{
+    background-color:aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ header{
+    background-color: bisque;
+    padding: 15px;
+ }
+ nav a{
+    text-decoration: wavy;
+    color:blue;
+    margin: 0 4px;
+    font-weight: bold;
+ }
+nav a:hover {
+      color: orange;            /* when you hover */
+    }
+
+nav a:visited {
+      color: purple;            /* after the link is visited */
+    }
+
+nav a:active {
+      color: red;               /* while clicking */
+    }
